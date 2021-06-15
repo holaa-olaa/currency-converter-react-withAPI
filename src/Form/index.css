@@ -11,6 +11,11 @@
     text-transform: uppercase;
 }
 
+.form__fieldset {
+    border-radius: 10px;
+    padding: 10px;
+}
+
 .form__buttonContainer {
     display: block;
     margin: 40px 5px;

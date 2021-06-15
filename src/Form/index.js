@@ -15,8 +15,10 @@ const Form = ({ currencies }) => {
     const calculateResult = (currency, amount) => {
         const rate = currencies.find(({ id }) => id === currency).exchangeRate;
 
+        console.log(rate);
+
         setResult({
-            finalResult: +amount / rate,
+            finalResult: amount / rate,
             currency,
         });
     };
@@ -30,24 +32,26 @@ const Form = ({ currencies }) => {
         <form className="form" onSubmit={onFormSubmit}>
             <fieldset className="form__fieldset">
                 <legend className="form__legend">Kantor walut</legend>
-
-                <Label
-                    labelText={"Kwota w złotych (PLN)*:"}
-                    body={<Input amount={amount} setAmount={setAmount} />}
-                >
-                </Label>
-
-                <Label
-                    labelText={"Wybierz walutę*:"}
-                    body={
-                        <Select
-                            currencies={currencies}
-                            currency={currency}
-                            setCurrency={setCurrency}
-                        >
-                        </Select>}
-                >
-                </Label>
+                <p>
+                    <Label
+                        labelText={"Kwota w złotych (PLN)*:"}
+                        body={<Input amount={amount} setAmount={setAmount} />}
+                    >
+                    </Label>
+                </p>
+                <p>
+                    <Label
+                        labelText={"Wybierz walutę*:"}
+                        body={
+                            <Select
+                                currencies={currencies}
+                                currency={currency}
+                                setCurrency={setCurrency}
+                            >
+                            </Select>}
+                    >
+                    </Label>
+                </p>
 
                 <span className="form__buttonContainer">
                     <button className="form__button">
