@@ -1,7 +1,6 @@
 import './index.css';
 import Label from './Label';
 import Input from './Input';
-import Buttons from './Buttons';
 import Select from './Select';
 import Result from './Result';
 import { useState } from 'react';
@@ -14,14 +13,14 @@ const Form = ({ currencies }) => {
     const [currency, setCurrency] = useState(currencies[0].id);
 
     const calculateResult = (currency, amount) => {
-        const rate = currencies.find(({id}) => id === currency).exchangeRate;
+        const rate = currencies.find(({ id }) => id === currency).exchangeRate;
 
         setResult({
             finalResult: +amount / rate,
             currency,
         });
     };
-    
+
     const onFormSubmit = (event) => {
         event.preventDefault();
         calculateResult(currency, amount);
@@ -50,7 +49,14 @@ const Form = ({ currencies }) => {
                 >
                 </Label>
 
-                <Buttons/>
+                <span className="form__buttonContainer">
+                    <button className="form__button">
+                        Przelicz kwotę!
+                    </button>
+                    <button type="reset" className="form__button">
+                        Wyczyść
+                    </button>
+                </span>
 
                 <Result result={result}></Result>
 
