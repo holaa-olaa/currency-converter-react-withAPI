@@ -3,6 +3,7 @@ import Label from './Label';
 import Input from './Input';
 import Select from './Select';
 import Result from './Result';
+import Footer from './Footer';
 import { useState } from 'react';
 
 
@@ -14,8 +15,6 @@ const Form = ({ currencies }) => {
 
     const calculateResult = (currency, amount) => {
         const rate = currencies.find(({ id }) => id === currency).exchangeRate;
-
-        console.log(rate);
 
         setResult({
             finalResult: amount / rate,
@@ -42,13 +41,12 @@ const Form = ({ currencies }) => {
                 <p>
                     <Label
                         labelText={"Wybierz walutę*:"}
-                        body={
-                            <Select
-                                currencies={currencies}
-                                currency={currency}
-                                setCurrency={setCurrency}
-                            >
-                            </Select>}
+                        body=
+                        {<Select
+                            currencies={currencies}
+                            currency={currency}
+                            setCurrency={setCurrency}
+                        />}
                     >
                     </Label>
                 </p>
@@ -64,9 +62,7 @@ const Form = ({ currencies }) => {
 
                 <Result result={result}></Result>
 
-                <footer className="form__footer">
-                    Kurs z dnia 06.05.2021 - według danych z Narodowego Banku Polskiego.
-                </footer>
+                <Footer body={"Kurs z dnia 06.05.2021 - według danych z Narodowego Banku Polskiego."}> </Footer>
             </fieldset>
         </form>
     );

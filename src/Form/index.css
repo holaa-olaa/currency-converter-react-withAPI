@@ -40,8 +40,3 @@
 .form__button:active {
     background-color: hsl(219, 60%, 43%);
 }
-
-.form__footer {
-    font-size: 14px;
-    margin-top: 15px;
-}
