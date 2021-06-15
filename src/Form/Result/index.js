@@ -5,7 +5,7 @@ const Result = ({ result }) => (
         <p className="result">
             WYNIK:&nbsp;
             <strong>
-                {result.finalResult}&nbsp;{result.currency}
+                {result.finalResult.toFixed(2)}&nbsp;{result.currency}
             </strong>
         </p>
     ));
