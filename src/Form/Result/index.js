@@ -1,13 +1,14 @@
 import './index.css';
 
 const Result = ({ result }) => (
-    result !== undefined && (
-        <p className="result">
-            WYNIK:&nbsp;
+    <p className="result">
+        WYNIK:&nbsp;
+        {result !== undefined && (
             <strong>
                 {result.finalResult.toFixed(2)}&nbsp;{result.currency}
             </strong>
-        </p>
-    ));
+        )}
+    </p>
+);
 
 export default Result;
