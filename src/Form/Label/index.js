@@ -2,7 +2,7 @@ import './index.css';
 
 const Label = ({ labelText, body }) => (
     <label>
-        <span className="form__labelText">
+        <span className="label">
             {labelText}
         </span>
         {body}
