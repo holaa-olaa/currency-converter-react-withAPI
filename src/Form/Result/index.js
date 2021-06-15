@@ -2,13 +2,12 @@ import './index.css';
 
 const Result = ({ result }) => (
     result !== undefined && (
-    <p className="form__paragraph">
-        WYNIK:
+    <p className="result">
+        WYNIK:&nbsp;
         <strong>
-            {result.finalResult}{result.currency}
+            {result.finalResult}&nbsp;{result.currency}
         </strong>
     </p>
-)
-);
+));
 
 export default Result;
