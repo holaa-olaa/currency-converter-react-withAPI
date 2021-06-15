@@ -11,11 +11,6 @@
     text-transform: uppercase;
 }
 
-.form__fieldset {
-    border-radius: 10px;
-    padding: 10px;
-}
-
 .form__buttonContainer {
     display: block;
     margin: 40px 5px;
@@ -39,18 +34,6 @@
 
 .form__button:active {
     background-color: hsl(219, 60%, 43%);
-}
-
-.form__paragraph {
-    text-align: center;
-    text-decoration: solid;
-    letter-spacing: 1.7px;
-    padding: 10px;
-    margin: 5px;
-    background-color: hsl(214, 34%, 55%);
-    color: hsl(0, 0%, 100%);
-    max-width: 100%;
-    border-radius: 15px;
 }
 
 .form__footer {

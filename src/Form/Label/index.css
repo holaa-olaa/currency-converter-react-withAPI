@@ -1,0 +1,6 @@
+.form__labelText {
+    display: inline-block;
+    width: 100%;
+    max-width: 250px;
+    margin: 5px;
+}

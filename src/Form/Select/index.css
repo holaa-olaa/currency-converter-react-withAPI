@@ -1,0 +1,7 @@
+.form__field {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: solid 2px hsl(0, 0%, 50%);
+    border-radius: 10px;
+}
