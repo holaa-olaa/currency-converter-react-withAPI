@@ -60,9 +60,8 @@ const Form = ({ currencies }) => {
                     </button>
                 </span>
 
-                <Result result={result}></Result>
-
-                <Footer body={"Kurs z dnia 06.05.2021 - według danych z Narodowego Banku Polskiego."}> </Footer>
+                <Result result={result}/>
+                <Footer body={"Kurs z dnia 06.05.2021 - według danych z Narodowego Banku Polskiego."}/>
             </fieldset>
         </form>
     );
