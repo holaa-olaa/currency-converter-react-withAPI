@@ -27,8 +27,12 @@ const Form = ({ currencies }) => {
         calculateResult(currency, amount);
     }
 
+    const onFormReset = () => {
+        setAmount("");
+    }
+
     return (
-        <form className="form" onSubmit={onFormSubmit}>
+        <form className="form" onSubmit={onFormSubmit} onReset={onFormReset}>
             <fieldset className="form__fieldset">
                 <legend className="form__legend">Kantor walut</legend>
                 <p>
