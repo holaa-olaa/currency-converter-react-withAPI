@@ -25,11 +25,11 @@ const Form = ({ currencies }) => {
     const onFormSubmit = (event) => {
         event.preventDefault();
         calculateResult(currency, amount);
-    }
+    };
 
     const onFormReset = () => {
         setAmount("");
-    }
+    };
 
     return (
         <form className="form" onSubmit={onFormSubmit} onReset={onFormReset}>
@@ -64,11 +64,11 @@ const Form = ({ currencies }) => {
                     </button>
                 </span>
 
-                <Result result={result}/>
-                <Footer body={"Kurs z dnia 06.05.2021 - według danych z Narodowego Banku Polskiego."}/>
+                <Result result={result} />
+                <Footer body={"Kurs z dnia 06.05.2021 - według danych z Narodowego Banku Polskiego."} />
             </fieldset>
         </form>
     );
-}
+};
 
 export default Form;
