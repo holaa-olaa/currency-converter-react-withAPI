@@ -29,6 +29,7 @@ const Form = ({ currencies }) => {
 
     const onFormReset = () => {
         setAmount("");
+        setResult();
     };
 
     return (
