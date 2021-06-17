@@ -38,14 +38,14 @@ const Form = ({ currencies }) => {
                 <legend className="form__legend">Kantor walut</legend>
                 <p>
                     <Label
-                        labelText={"Kwota w złotych (PLN)*:"}
+                        labelText="Kwota w złotych (PLN)*:"
                         body={<Input amount={amount} setAmount={setAmount} />}
                     >
                     </Label>
                 </p>
                 <p>
                     <Label
-                        labelText={"Wybierz walutę*:"}
+                        labelText="Wybierz walutę*:"
                         body=
                         {<Select
                             currencies={currencies}
@@ -66,7 +66,7 @@ const Form = ({ currencies }) => {
                 </span>
 
                 <Result result={result} />
-                <Footer body={"Kurs z dnia 06.05.2021 - według danych z Narodowego Banku Polskiego."} />
+                <Footer body="Kurs z dnia 06.05.2021 - według danych z Narodowego Banku Polskiego." />
             </fieldset>
         </form>
     );
