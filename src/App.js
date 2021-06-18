@@ -3,7 +3,7 @@ import currencies from './curriencies.js';
 
 function App() {
   return (
-    <Form currencies={currencies}/>
+    <Form currencies={currencies} />
   );
 };
 
