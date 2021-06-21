@@ -9,7 +9,6 @@ import { useState } from 'react';
 
 
 const Form = ({ currencies }) => {
-
     const [amount, setAmount] = useState("");
     const [result, setResult] = useState();
     const [currency, setCurrency] = useState(currencies[0].id);
