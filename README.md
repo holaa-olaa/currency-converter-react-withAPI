@@ -24,6 +24,7 @@ Project is created with:
 * Create React App
 * Babel
 * Webpack
+* React Hooks
 	
 ## Setup
 It's easy! To run this project just open the link in your browser, then enter the amount in PLN and choose from the list the currency to which you want to convert. After confirmation the result will appear below. 
