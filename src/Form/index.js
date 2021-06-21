@@ -1,4 +1,5 @@
 import './index.css';
+import currencies from './curriencies.js';
 import Label from './Label';
 import Input from './Input';
 import Select from './Select';
@@ -8,7 +9,7 @@ import Clock from './Clock';
 import { useState } from 'react';
 
 
-const Form = ({ currencies }) => {
+const Form = () => {
     const [amount, setAmount] = useState("");
     const [result, setResult] = useState();
     const [currency, setCurrency] = useState(currencies[0].id);
@@ -67,7 +68,7 @@ const Form = ({ currencies }) => {
                 </span>
 
                 <Result result={result} />
-                <Footer body="Kurs z dnia 06.05.2021 - według danych z Narodowego Banku Polskiego." />
+                <Footer/>
             </fieldset>
         </form>
     );
