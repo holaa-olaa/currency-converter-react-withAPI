@@ -1,0 +1,24 @@
+.buttons {
+    display: block;
+    margin: 40px 5px;
+}
+
+.buttons__button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(214, 55%, 33%);
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 1.6px;
+}
+
+.buttons__button:hover {
+    background-color: hsl(219, 60%, 38%);
+}
+
+.buttons__button:active {
+    background-color: hsl(219, 60%, 43%);
+}

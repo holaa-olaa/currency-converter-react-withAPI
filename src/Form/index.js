@@ -6,6 +6,7 @@ import Select from './Select';
 import Result from './Result';
 import Footer from './Footer';
 import Clock from './Clock';
+import Buttons from './Buttons';
 import { useState } from 'react';
 
 
@@ -57,18 +58,9 @@ const Form = () => {
                     >
                     </Label>
                 </p>
-
-                <span className="form__buttonContainer">
-                    <button className="form__button">
-                        Przelicz kwotę!
-                    </button>
-                    <button type="reset" className="form__button">
-                        Wyczyść
-                    </button>
-                </span>
-
+                <Buttons />
                 <Result result={result} />
-                <Footer/>
+                <Footer />
             </fieldset>
         </form>
     );
