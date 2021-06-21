@@ -4,6 +4,7 @@ import Input from './Input';
 import Select from './Select';
 import Result from './Result';
 import Footer from './Footer';
+import Clock from './Clock';
 import { useState } from 'react';
 
 
@@ -34,6 +35,7 @@ const Form = ({ currencies }) => {
 
     return (
         <form className="form" onSubmit={onFormSubmit} onReset={onFormReset}>
+            <Clock />
             <fieldset className="form__fieldset">
                 <legend className="form__legend">Kantor walut</legend>
                 <p>
