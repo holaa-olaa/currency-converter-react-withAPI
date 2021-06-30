@@ -19,12 +19,12 @@ Created for the course: YouCode II Frontend Developer
 ## Technologies
 Project is created with:
 * HTML
-* CSS (BEM naming convetion)
 * ES6+
 * Create React App
 * Babel
 * Webpack
 * React Hooks
+* Styled Components
 	
 ## Setup
 It's easy! To run this project just open the link in your browser, then enter the amount in PLN and choose from the list the currency to which you want to convert. After confirmation the result will appear below. 
