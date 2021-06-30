@@ -1,14 +1,14 @@
-import './index.css';
+import { StyledResult } from './styles.js';
 
 const Result = ({ result }) => (
-    <p className="result">
+    <StyledResult>
         WYNIK:&nbsp;
         {result !== undefined && (
             <strong>
                 {result.finalResult.toFixed(2)}&nbsp;{result.currency}
             </strong>
         )}
-    </p>
+    </StyledResult>
 );
 
 export default Result;

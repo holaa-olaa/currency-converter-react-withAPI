@@ -1,10 +1,10 @@
-import './index.css';
+import { Legend } from './styles.js';
 
 const Label = ({ labelText, body }) => (
     <label>
-        <span className="label">
+        <Legend>
             {labelText}
-        </span>
+        </Legend>
         {body}
     </label>
 );

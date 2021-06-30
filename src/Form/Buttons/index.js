@@ -1,14 +1,14 @@
-import './index.css';
+import { Wrapper, Button } from './styles.js';
 
 const Buttons = () => (
-    <span className="buttons">
-        <button className="buttons__button">
+    <Wrapper>
+        <Button>
             Przelicz kwotę!
-        </button>
-        <button type="reset" className="buttons__button">
+        </Button>
+        <Button type="reset">
             Wyczyść
-        </button>
-    </span>
+        </Button>
+    </Wrapper>
 );
 
 export default Buttons;

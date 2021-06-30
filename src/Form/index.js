@@ -1,4 +1,3 @@
-import './index.css';
 import currencies from './curriencies.js';
 import Label from './Label';
 import Input from './Input';
@@ -8,6 +7,7 @@ import Footer from './Footer';
 import Clock from './Clock';
 import Buttons from './Buttons';
 import { useState } from 'react';
+import { FormFieldset, FormLegend, FormWrapper } from './styles.js';
 
 
 const Form = () => {
@@ -35,10 +35,10 @@ const Form = () => {
     };
 
     return (
-        <form className="form" onSubmit={onFormSubmit} onReset={onFormReset}>
+        <FormWrapper onSubmit={onFormSubmit} onReset={onFormReset}>
             <Clock />
-            <fieldset className="form__fieldset">
-                <legend className="form__legend">Kantor walut</legend>
+            <FormFieldset>
+                <FormLegend>Kantor walut</FormLegend>
                 <p>
                     <Label
                         labelText="Kwota w złotych (PLN)*:"
@@ -60,9 +60,11 @@ const Form = () => {
                 </p>
                 <Buttons />
                 <Result result={result} />
-                <Footer />
-            </fieldset>
-        </form>
+                <Footer>
+                    Kurs z dnia 06.05.2021 - według danych z Narodowego Banku Polskiego
+                </Footer>
+            </FormFieldset>
+        </FormWrapper>
     );
 };
 

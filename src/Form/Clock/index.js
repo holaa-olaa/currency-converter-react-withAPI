@@ -1,11 +1,11 @@
 import { useLocalDate } from './useLocalDate';
-import './index.css';
+import { StyledClock } from './styles.js';
 
 const Clock = () => {
     const date = useLocalDate();
 
     return (
-        <div className="clock">Dzisiaj jest {date}</div>
+        <StyledClock>Dzisiaj jest {date}</StyledClock>
     );
 };
 
