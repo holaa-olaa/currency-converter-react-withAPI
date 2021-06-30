@@ -1,9 +1,9 @@
-import './index.css';
+import { StyledInput } from '../Input/styles.js';
 
 const Select = ({ currencies, currency, setCurrency }) => (
 
-    <select
-        className="select"
+    <StyledInput 
+        as="select"
         required
         onChange={({ target }) => setCurrency(target.value)}
         value={currency}
@@ -13,7 +13,7 @@ const Select = ({ currencies, currency, setCurrency }) => (
                 {currency.name}
             </option>
         ))}
-    </select>
+    </StyledInput>
 );
 
 export default Select;

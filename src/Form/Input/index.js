@@ -1,9 +1,8 @@
-import './index.css';
+import { StyledInput } from './styles.js';
 
 const Input = ({ amount, setAmount }) => (
-    <input
+    <StyledInput
         value={amount}
-        className="input"
         type="number"
         step="0.01"
         min="0.01"
