@@ -5,6 +5,10 @@ export const FormWrapper = styled.form`
     padding: 30px 30px;
     background-color: ${({ theme }) => theme.colors.botticelli};
     border-radius: 10px;
+
+    @media(max-width:767px) {
+        overflow-x: auto;
+    }
 `;
 
 export const FormLegend = styled.legend`
