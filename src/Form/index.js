@@ -44,7 +44,7 @@ const Form = () => {
                 {ratesData.state === "loading"
                     ? (
                         <Loading>
-                            Chwileczkę... <br />Ładuję kursy walut z Europejskiego Banku Centralnego.
+                            Chwilka cierpliwości &#128521; <br />Ładuję kursy walut z Europejskiego Banku Centralnego.
                         </Loading>
                     )
                     : (
