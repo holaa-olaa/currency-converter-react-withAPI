@@ -5,5 +5,6 @@ export const theme = {
         lightBlue: "hsl(214, 34%, 55%)",
         botticelli: "hsl(194, 33%, 87%)",
         white: "hsl(0, 0%, 100%)",
+        crimson: "#dc143c",
     }
 };

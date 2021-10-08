@@ -5,7 +5,7 @@ const Result = ({ result }) => (
         WYNIK:&nbsp;
         {result !== undefined && (
             <strong>
-                {result.finalResult.toFixed(2)}&nbsp;{result.currency}
+                {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
             </strong>
         )}
     </StyledResult>

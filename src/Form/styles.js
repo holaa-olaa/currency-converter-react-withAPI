@@ -21,3 +21,19 @@ export const FormFieldset = styled.fieldset`
     border-radius: 5px;
     padding: 10px;
 `;
+
+export const Loading = styled.p`
+    color: ${({theme}) => theme.colors.darkBlue};
+`;
+
+export const Failure = styled.p`
+    color: ${({theme}) => theme.colors.crimson};
+`;
+
+export const StyledInput = styled.input`
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: solid 2px ${({ theme }) => theme.colors.grey};
+    border-radius: 5px;
+`;
