@@ -54,49 +54,49 @@ const Form = () => {
                                 Ojojoj... Coś poszło nie tak. Sprawdź czy masz połączenie z internetem.
                             </Failure>
                         ) : (
-            <>    
-                <p>
-                    <Label
-                        labelText="Kwota w złotych (PLN)*:"
-                        body={
-                        <StyledInput
-                            value={amount}
-                            type="number"
-                            step="0.01"
-                            min="0.01"
-                            placeholder="Wpisz kwotę"
-                            required
-                            autoFocus
-                            onChange={({ target }) => setAmount(target.value)}
-                        />}
-                    >
-                    </Label>
-                </p>
-                <p>
-                    <Label
-                        labelText="Wybierz walutę*:"
-                        body=
-                        {<StyledInput 
-                            as="select"
-                            required
-                            onChange={({ target }) => setCurrency(target.value)}
-                            value={currency}
-                        >
-                            {Object.keys(ratesData.rates).map(((currency) => (
-                                <option key={currency} value={currency}>
-                                    {currency}
-                                </option>
-                            )))}
-                        </StyledInput>}
-                    >
-                    </Label>
-                </p>
-                <Buttons />
-                <Result result={result} />
-                <Footer>
-                    Kurs z dnia {ratesData.date} - według danych z Narodowego Banku Polskiego
-                </Footer>
-                </>
+                            <>
+                                <p>
+                                    <Label
+                                        labelText="Kwota w złotych (PLN)*:"
+                                        body={
+                                            <StyledInput
+                                                value={amount}
+                                                type="number"
+                                                step="0.01"
+                                                min="0.01"
+                                                placeholder="Wpisz kwotę"
+                                                required
+                                                autoFocus
+                                                onChange={({ target }) => setAmount(target.value)}
+                                            />}
+                                    >
+                                    </Label>
+                                </p>
+                                <p>
+                                    <Label
+                                        labelText="Wybierz walutę*:"
+                                        body=
+                                        {<StyledInput
+                                            as="select"
+                                            required
+                                            onChange={({ target }) => setCurrency(target.value)}
+                                            value={currency}
+                                        >
+                                            {Object.keys(ratesData.rates).map(((currency) => (
+                                                <option key={currency} value={currency}>
+                                                    {currency}
+                                                </option>
+                                            )))}
+                                        </StyledInput>}
+                                    >
+                                    </Label>
+                                </p>
+                                <Buttons />
+                                <Result result={result} />
+                                <Footer>
+                                    Kurs z dnia {ratesData.date} - według danych z Narodowego Banku Polskiego
+                                </Footer>
+                            </>
                         )
                     )}
             </FormFieldset>
