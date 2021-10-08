@@ -1,4 +1,3 @@
-import currencies from './curriencies.js';
 import Label from './Label';
 import Result from './Result';
 import Footer from './Footer';
