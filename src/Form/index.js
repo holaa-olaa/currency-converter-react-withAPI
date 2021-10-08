@@ -23,7 +23,7 @@ const Form = () => {
     };
 
     const [amount, setAmount] = useState("");
-    const [currency, setCurrency] = useState("");
+    const [currency, setCurrency] = useState("AED");
 
     const onFormSubmit = (event) => {
         event.preventDefault();
