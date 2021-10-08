@@ -1,4 +1,4 @@
-# Currency Converter w React.js
+# Currency Converter w React.js with API
 ![Previous Side Trailer](src/readmeGif.gif)
 
 ## Table of contents
