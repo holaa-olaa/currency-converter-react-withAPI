@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/currency-converter-react-withAPI/static/js/main.98c6e196.chunk.js",
+    "main.js.map": "/currency-converter-react-withAPI/static/js/main.98c6e196.chunk.js.map",
+    "runtime-main.js": "/currency-converter-react-withAPI/static/js/runtime-main.d697fb08.js",
+    "runtime-main.js.map": "/currency-converter-react-withAPI/static/js/runtime-main.d697fb08.js.map",
+    "static/js/2.a555b198.chunk.js": "/currency-converter-react-withAPI/static/js/2.a555b198.chunk.js",
+    "static/js/2.a555b198.chunk.js.map": "/currency-converter-react-withAPI/static/js/2.a555b198.chunk.js.map",
+    "static/js/3.43c674d1.chunk.js": "/currency-converter-react-withAPI/static/js/3.43c674d1.chunk.js",
+    "static/js/3.43c674d1.chunk.js.map": "/currency-converter-react-withAPI/static/js/3.43c674d1.chunk.js.map",
+    "index.html": "/currency-converter-react-withAPI/index.html",
+    "static/js/2.a555b198.chunk.js.LICENSE.txt": "/currency-converter-react-withAPI/static/js/2.a555b198.chunk.js.LICENSE.txt",
+    "static/media/background.54ab7e07.jpeg": "/currency-converter-react-withAPI/static/media/background.54ab7e07.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d697fb08.js",
+    "static/js/2.a555b198.chunk.js",
+    "static/js/main.98c6e196.chunk.js"
+  ]
+}
